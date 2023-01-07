@@ -1,0 +1,119 @@
+.confirm-lang-background {
+  background-image: url("../../img/bg-lang.png");
+  background-size: cover;
+  max-height: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+.confirm-top-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  padding: 40px;
+}
+
+.confirm-card-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0072bc;
+  border-radius: 20px;
+  width: 250px;
+  height: 140px;
+  flex-direction: row;
+}
+.confirm-het {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.confirm-card-view > img:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+
+.confirm-card-view > img:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  margin-left: 40px;
+}
+
+.confirm-top-text1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  padding-top: 30px;
+  font-size: 16px;
+}
+
+.confirm-top-text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.confirm-top-text2-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0072bc;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  height: 30px;
+  width: 70px;
+}
+
+.confirm-top-text3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.confirm-btn-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.confirm-btn-decline > button {
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+
+.confirm-btn-confirm > button {
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  height: 45px;
+}
+
+.p {
+  font-size: 14px;
+  font-weight: 500;
+}

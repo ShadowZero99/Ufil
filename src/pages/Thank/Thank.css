@@ -1,0 +1,188 @@
+/* sss */
+.Thank-responsive-background {
+  position: absolute;
+  background-image: url("../../img/bg-soap-sss.png");
+  background-size: cover;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100vh;
+  height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+@media screen and (max-width: 417px) and (min-width: 0px) {
+  .Thank-logo > img {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .Thank-top-text {
+    color: white;
+    font-weight: 500;
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top: 78%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+/* ss */
+@media screen and (max-width: 597px) and (min-width: 418px) {
+  .Thank-logo > img {
+    position: absolute;
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 35%;
+  }
+  .Thank-top-text {
+    color: white;
+    font-weight: 550;
+    font-size: 25px;
+
+    margin-top: 80%;
+    margin-left: 5%;
+    margin-right: 4%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* s */
+@media screen and (max-width: 768px) and (min-width: 598px) {
+  .Thank-logo > img {
+    position: absolute;
+    width: 90%;
+    margin-left: 7%;
+    margin-top: 35%;
+  }
+
+  .Thank-top-text {
+    color: white;
+    font-weight: 600;
+    font-size: 38px;
+
+    margin-top: 84%;
+    margin-left: 5%;
+    margin-right: 4%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* m */
+@media screen and (max-width: 900px) and (min-width: 769px) {
+  .Thank-logo > img {
+    position: absolute;
+    width: 90%;
+    margin-left: 7%;
+    margin-top: 30%;
+  }
+
+  .Thank-top-text {
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+
+    margin-top: 75%;
+    margin-left: 18%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* l */
+@media screen and (max-width: 1080px) and (min-width: 901px) {
+  .Thank-logo > img {
+    position: absolute;
+    width: 95%;
+    margin-left: 4%;
+    margin-top: 40%;
+  }
+  .Thank-top-text {
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+
+    margin-top: 85%;
+    margin-left: 15%;
+    margin-right: 4%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* el */
+@media screen and (max-width: 1292px) and (min-width: 1081px) {
+  .Thank-logo > img {
+    position: absolute;
+    width: 95%;
+    margin-left: 4%;
+    margin-top: 40%;
+  }
+  .Thank-top-text {
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 85%;
+    margin-left: 16%;
+    margin-right: 4%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* ell */
+@media screen and (max-width: 1500px) and (min-width: 1293px) {
+  .Thank-logo > img {
+    position: absolute;
+    width: 95%;
+    margin-left: 4%;
+    margin-top: 40%;
+  }
+
+  .Thank-top-text {
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 80px;
+    margin-top: 85%;
+    margin-left: 15%;
+    margin-right: 4%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  .Thank-logo > img {
+    position: absolute;
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 40%;
+  }
+  .Thank-top-text {
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 105px;
+    margin-top: 90%;
+    display: flex;
+    margin-left: 12%;
+    margin-right: 4%;
+    align-items: center;
+    justify-content: center;
+  }
+}

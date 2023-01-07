@@ -1,0 +1,28 @@
+ {
+    id: 1,
+    imageUrl1: logo1,
+    title1: "Product01",
+    imageUrl2: bottle1,
+    title2: "Item 2",
+  },
+  {
+    id: 2,
+    imageUrl1: logo2,
+    title1: "Product02",
+    imageUrl2: bottle2,
+    title2: "Item 2",
+  },
+  {
+    id: 3,
+    imageUrl1: logo2,
+    title1: "Product02",
+    imageUrl2: bottle2,
+    title2: "Item 2",
+  },
+  {
+    id: 4,
+    imageUrl1: logo2,
+    title1: "Product02",
+    imageUrl2: bottle2,
+    title2: "Item 2",
+  },

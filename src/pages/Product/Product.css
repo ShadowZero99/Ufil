@@ -1,0 +1,112 @@
+.lang-background {
+  background-image: url("../../img/bg-lang.png");
+  background-size: cover;
+  max-height: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 479px) {
+  .btn-back > img {
+    position: absolute;
+    width: 10%;
+    margin-top: 35px;
+    margin-left: 16px;
+  }
+
+  .product-top-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-left: 29%;
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .btn-back > img {
+    position: absolute;
+    width: 10%;
+    margin-top: 45px;
+    margin-left: 25px;
+  }
+  .product-top-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-left: 22%;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1079px) and (min-width: 768px) {
+  .btn-back > img {
+    position: absolute;
+    width: 12%;
+    margin-top: 65px;
+    margin-left: 27px;
+  }
+
+  .product-top-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 72px;
+    margin-left: 26%;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 1080px) {
+  .btn-back > img {
+    position: absolute;
+    width: 12%;
+    margin-top: 75px;
+    margin-left: 30px;
+  }
+
+  .product-top-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 550;
+    margin-top: 82px;
+    margin-left: 28%;
+    font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 1351px) {
+  .btn-back > img {
+    position: absolute;
+    width: 12%;
+    margin-top: 75px;
+    margin-left: 30px;
+  }
+
+  .product-top-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 82px;
+    margin-left: 28%;
+    font-size: 120px;
+  }
+}

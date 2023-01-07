@@ -1,0 +1,1 @@
+{"ast":null,"code":"'use strict';\n\nmodule.exports = {\n  info: 'ℹ️',\n  success: '✅',\n  warning: '⚠️',\n  error: '❌️'\n};","map":null,"metadata":{},"sourceType":"script"}
