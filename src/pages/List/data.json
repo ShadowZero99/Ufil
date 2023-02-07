@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+
+    "title1": "Product01",
+
+    "title2": "Item 1",
+    "count": 3,
+    "volume": [10, 20, 30],
+    "Rupee": [5, 6, 7],
+    "Save": [1, 2, 3]
+  },
+  {
+    "id": 2,
+
+    "title1": "Product02",
+
+    "title2": "Item 2",
+    "count": 3,
+    "volume": [10, 20, 30],
+    "Rupee": [5, 6, 7],
+    "Save": [1, 2, 3]
+  },
+  {
+    "id": 3,
+
+    "title1": "Product03",
+
+    "title2": "Item 2",
+    "count": 3,
+    "volume": [10, 20, 30],
+    "Rupee": [5, 6, 7],
+    "Save": [1, 2, 3]
+  }
+]

@@ -16,7 +16,7 @@ const Filling = () => {
           <Link style={{ textDecoration: "none" }} to="/Thank">
             <div className="confirm-btn-confirm">
               <Button>
-                <span className="p">STOP</span>
+                <span className="p5">STOP</span>
               </Button>
             </div>
           </Link>

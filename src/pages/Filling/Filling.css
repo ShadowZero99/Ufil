@@ -92,8 +92,9 @@
     font-size: 50px;
     width: 180px;
     height: 70px;
+    border-radius: 50px;
   }
-  .p {
+  .p5 {
     font-size: 32px;
   }
 }
@@ -143,8 +144,9 @@
     font-size: 50px;
     width: 200px;
     height: 110px;
+    border-radius: 70px;
   }
-  .p {
+  .p5 {
     font-size: 45px;
   }
 }
@@ -196,7 +198,7 @@
     height: 160px;
     border-radius: 70px;
   }
-  .p {
+  .p5 {
     font-size: 65px;
   }
 }
@@ -248,7 +250,7 @@
     height: 180px;
     border-radius: 90px;
   }
-  .p {
+  .p5 {
     font-size: 65px;
   }
 }

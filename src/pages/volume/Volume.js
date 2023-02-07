@@ -1,18 +1,18 @@
 import React from "react";
 import Back from "../../img/back.png";
-import bottle1 from "../../img/bottle1.png";
-import bottle2 from "../../img/bottle21.png";
-import logo1 from "../../img/logo1.png";
-import logo2 from "../../img/logo21.png";
+import bottle1 from "../../img/Product_Images/bottle1.png";
+//import bottle2 from "../../img/bottle21.png";
+import logo1 from "../../img/Product_Images/logo1.png";
+//import logo2 from "../../img/logo21.png";
 import "./Volume.css";
 import { Link } from "react-router-dom";
 import CardView from "./CardView";
 
 const Volume = () => {
   const cards = [
-    { id: 1, title: "10ml", content: "Rs.5", content2: "Save Rs.1" },
-    { id: 2, title: "20ml", content: "Rs.6", content2: "Save Rs.2" },
-    { id: 3, title: "30ml", content: "Rs.7", content2: "Save Rs.3" },
+    { id: 1, title: "10", content: "5", content2: "1" },
+    { id: 2, title: "20", content: "6", content2: "2" },
+    { id: 3, title: "30", content: "7", content2: "3" },
   ];
   return (
     <div className="Volume">

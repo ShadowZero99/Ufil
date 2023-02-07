@@ -1,11 +1,11 @@
 import React from "react";
 import "./Confirm.css";
-import Card from "../volume/Card";
+//import Card from "../volume/Card";
 import { Link } from "react-router-dom";
 //import print1 from "../../img/print1.png";
 import { Button } from "@mantine/core";
-import bottle4 from "../../img/bottle4.png";
-import logo1 from "../../img/logo1.png";
+import bottle4 from "../../img/Product_Images/bottle4.png";
+import logo1 from "../../img/Product_Images/logo1.png";
 
 const Confirm = () => {
   return (
@@ -28,16 +28,16 @@ const Confirm = () => {
         </div>
         <div className="confirm-btn-bottom">
           <Link style={{ textDecoration: "none" }} to="/Volume">
-            <div className="confirm-btn-decline">
+            <div className="confirm-btn-decline-o">
               <Button>
-                <span className="p">DECLINE</span>
+                <span className="ppp">DECLINE</span>
               </Button>
             </div>
           </Link>
           <Link style={{ textDecoration: "none" }} to="/Collect">
-            <div className="confirm-btn-confirm">
+            <div className="confirm-btn-confirm-o">
               <Button>
-                <span className="p">CONFIRM</span>
+                <span className="ppp">CONFIRM</span>
               </Button>
             </div>
           </Link>
