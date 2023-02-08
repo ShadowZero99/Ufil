@@ -13,67 +13,74 @@ import logo5 from "../../img/Product_Images/logo5.png";
 import logo6 from "../../img/Product_Images/logo6.png";
 import { Link } from "react-router-dom";
 import "./List.css";
+
 import Data from "../List/data.json";
 
-const item = Data;
-
-console.log(item);
-
-const Items = item.map((itemp) => {
-  if (itemp.id === 1) {
-    return { ...itemp, imageUrl1: logo1, imageUrl2: bottle1 };
-  }
-  if (itemp.id === 2) {
-    return { ...itemp, imageUrl1: logo2, imageUrl2: bottle2 };
-  }
-  if (itemp.id === 3) {
-    return { ...itemp, imageUrl1: logo3, imageUrl2: bottle3 };
-  }
-  if (itemp.id === 4) {
-    return { ...itemp, imageUrl1: logo4, imageUrl2: bottle4 };
-  }
-  if (itemp.id === 5) {
-    return { ...itemp, imageUrl1: logo5, imageUrl2: bottle5 };
-  }
-  if (itemp.id === 6) {
-    return { ...itemp, imageUrl1: logo6, imageUrl2: bottle6 };
-  }
-  return itemp;
-});
-
-function Item(props) {
-  return (
-    <Link style={{ textDecoration: "none" }} to="/Volume">
-      <div className="item">
-        <img src={props.imageUrl1} alt={props.title1} />
-        <p>{props.title1}</p>
-        <img src={props.imageUrl2} alt={props.title2} />
-      </div>
-    </Link>
-  );
-}
-
-function ListView() {
-  return (
-    <div
-      className="list-view"
-
-      //style={{ overflowY: "scroll", maxHeight: "70vh" }}
-    >
-      {Items.map((item) => (
-        <Item
-          key={item.id}
-          imageUrl1={item.imageUrl1}
-          title1={item.title1}
-          imageUrl2={item.imageUrl2}
-          title2={item.title2}
-        />
-      ))}
-    </div>
-  );
-}
-
 const List = () => {
+  const item = Data;
+
+  const Items = item.map((itemp) => {
+    if (itemp.id === 1) {
+      return { ...itemp, imageUrl1: logo1, imageUrl2: bottle1 };
+    }
+    if (itemp.id === 2) {
+      return { ...itemp, imageUrl1: logo2, imageUrl2: bottle2 };
+    }
+    if (itemp.id === 3) {
+      return { ...itemp, imageUrl1: logo3, imageUrl2: bottle3 };
+    }
+    if (itemp.id === 4) {
+      return { ...itemp, imageUrl1: logo4, imageUrl2: bottle4 };
+    }
+    if (itemp.id === 5) {
+      return { ...itemp, imageUrl1: logo5, imageUrl2: bottle5 };
+    }
+    if (itemp.id === 6) {
+      return { ...itemp, imageUrl1: logo6, imageUrl2: bottle6 };
+    }
+    return itemp;
+  });
+
+  // const handleClick = (id) => {
+  //   console.log(id);
+  // };
+  //    onClick={() => handleClick(props.itemid)}
+  function Item(props) {
+    return (
+      <Link
+        style={{ textDecoration: "none" }}
+        to="/Volume"
+        state={props.itemid}
+      >
+        <div className="item">
+          <img src={props.imageUrl1} alt={props.title1} />
+          <p>{props.title1}</p>
+          <img src={props.imageUrl2} alt={props.title2} />
+        </div>
+      </Link>
+    );
+  }
+
+  function ListView() {
+    return (
+      <div
+        className="list-view"
+
+        //style={{ overflowY: "scroll", maxHeight: "70vh" }}
+      >
+        {Items.map((item) => (
+          <Item
+            key={item.id}
+            itemid={item.id}
+            imageUrl1={item.imageUrl1}
+            title1={item.title1}
+            imageUrl2={item.imageUrl2}
+            title2={item.title2}
+          />
+        ))}
+      </div>
+    );
+  }
   return (
     <div className="het">
       <ListView />

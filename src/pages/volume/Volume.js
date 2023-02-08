@@ -1,19 +1,65 @@
 import React from "react";
 import Back from "../../img/back.png";
-import bottle1 from "../../img/Product_Images/bottle1.png";
-//import bottle2 from "../../img/bottle21.png";
-import logo1 from "../../img/Product_Images/logo1.png";
-//import logo2 from "../../img/logo21.png";
 import "./Volume.css";
 import { Link } from "react-router-dom";
 import CardView from "./CardView";
+import bottle1 from "../../img/Product_Images/bottle1.png";
+import bottle2 from "../../img/Product_Images/bottle2.png";
+import bottle3 from "../../img/Product_Images/bottle3.png";
+import bottle4 from "../../img/Product_Images/bottle4.png";
+import bottle5 from "../../img/Product_Images/bottle5.png";
+import bottle6 from "../../img/Product_Images/bottle6.png";
+import logo1 from "../../img/Product_Images/logo1.png";
+import logo2 from "../../img/Product_Images/logo2.png";
+import logo3 from "../../img/Product_Images/logo3.png";
+import logo4 from "../../img/Product_Images/logo4.png";
+import logo5 from "../../img/Product_Images/logo5.png";
+import logo6 from "../../img/Product_Images/logo6.png";
+import Data from "../List/data.json";
+import { useLocation } from "react-router-dom";
 
 const Volume = () => {
-  const cards = [
-    { id: 1, title: "10", content: "5", content2: "1" },
-    { id: 2, title: "20", content: "6", content2: "2" },
-    { id: 3, title: "30", content: "7", content2: "3" },
-  ];
+  const location = useLocation();
+  const msgg = location.state;
+
+  const item = Data;
+
+  const cards = item.map((itemp) => {
+    if (itemp.id === 1) {
+      return { ...itemp, imageUrl1: logo1, imageUrl2: bottle1 };
+    }
+    if (itemp.id === 2) {
+      return { ...itemp, imageUrl1: logo2, imageUrl2: bottle2 };
+    }
+    if (itemp.id === 3) {
+      return { ...itemp, imageUrl1: logo3, imageUrl2: bottle3 };
+    }
+    if (itemp.id === 4) {
+      return { ...itemp, imageUrl1: logo4, imageUrl2: bottle4 };
+    }
+    if (itemp.id === 5) {
+      return { ...itemp, imageUrl1: logo5, imageUrl2: bottle5 };
+    }
+    if (itemp.id === 6) {
+      return { ...itemp, imageUrl1: logo6, imageUrl2: bottle6 };
+    }
+    return itemp;
+  });
+
+  const newcard = cards.find((item) => item.id === msgg);
+
+  const data = [];
+  for (let i = 0; i < newcard.count; i++) {
+    data.push({
+      id: i + 1,
+      volume: newcard.volume[i],
+      Rupee: newcard.Rupee[i],
+      Save: newcard.Save[i],
+    });
+  }
+
+  const maxsave = newcard.Rupee[newcard.Rupee.length - 1];
+
   return (
     <div className="Volume">
       <div className="lang-background">
@@ -27,17 +73,16 @@ const Volume = () => {
           <div className="volume-top-left">
             <img src={logo1} alt="" />
             <p className="text1">Save up to</p>
-            <p className="text2">Rs.4</p>
+            <p className="text2">Rs. {maxsave}</p>
           </div>
           <div className="volume-top-right">
             <img src={bottle1} alt="" />
           </div>
         </div>
-        <Link style={{ textDecoration: "none" }} to="/Confirm">
-          <div className="volume-bottom">
-            <CardView cards={cards} />
-          </div>
-        </Link>
+
+        <div className="volume-bottom">
+          <CardView cards={cards} />
+        </div>
       </div>
     </div>
   );
