@@ -15,11 +15,11 @@
 }
 
 .btn-english > button {
-  border: 2px solid white;
-  border-radius: 40px;
+  border: 2px;
+  border-radius: 70px;
 
   color: white;
-  background: transparent;
+  /* background: transparent; */
 }
 
 .btn-english > button:hover {
@@ -27,11 +27,11 @@
   border: 2px solid white;
 }
 .btn-bengali > button {
-  border: 2px solid white;
-  border-radius: 40px;
+  border: 2px;
+  border-radius: 70px;
 
   color: white;
-  background: transparent;
+  /* background: transparent; */
   margin-left: 50px;
 }
 

@@ -10,6 +10,7 @@ import Collect from "./pages/Collect/Collect";
 import Confirm from "./pages/Confirm/Confirm";
 import Filling from "./pages/Filling/Filling";
 import Thank from "./pages/Thank/Thank";
+import Fill from "./pages/Fill/Fill";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Confirm" element={<Confirm />} />
         <Route path="/Filling" element={<Filling />} />
         <Route path="/Thank" element={<Thank />} />
+        <Route path="/Fill" element={<Fill />} />
       </Routes>
     </div>
   );

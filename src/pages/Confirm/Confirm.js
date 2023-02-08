@@ -4,8 +4,6 @@ import "./Confirm.css";
 import { Link } from "react-router-dom";
 //import print1 from "../../img/print1.png";
 import { Button } from "@mantine/core";
-import bottle4 from "../../img/Product_Images/bottle4.png";
-import logo1 from "../../img/Product_Images/logo1.png";
 import { useLocation } from "react-router-dom";
 
 const Confirm = () => {
@@ -15,6 +13,8 @@ const Confirm = () => {
   //console.log(data2.volume);
   const volume = data2.Volume;
   const Rupee = data2.Rupee;
+  const ImageUrl1 = data2.ImageUrl1;
+  const ImageUrl2 = data2.ImageUrl2;
 
   return (
     <div className="Confirm">
@@ -22,8 +22,8 @@ const Confirm = () => {
         <div className="confirm-top-text">You have selected</div>
         <div className="confirm-het">
           <div className="confirm-card-view">
-            <img src={logo1} alt="" />
-            <img src={bottle4} alt="" />
+            <img src={ImageUrl1} alt="" />
+            <img src={ImageUrl2} alt="" />
           </div>
         </div>
         <div className="confirm-top-text1">{volume} ml</div>
@@ -42,7 +42,7 @@ const Confirm = () => {
               </Button>
             </div>
           </Link>
-          <Link style={{ textDecoration: "none" }} to="/Collect">
+          <Link style={{ textDecoration: "none" }} to="/Collect" state={data2}>
             <div className="confirm-btn-confirm-o">
               <Button>
                 <span className="ppp">CONFIRM</span>

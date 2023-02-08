@@ -21,11 +21,13 @@ const Lang = () => {
               </Button>
             </div>
           </Link>
-          <div className="btn-bengali">
-            <Button>
-              <span className="p">Bengali</span>
-            </Button>
-          </div>
+          <Link to="/Product">
+            <div className="btn-bengali">
+              <Button>
+                <span className="p">Bengali</span>
+              </Button>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

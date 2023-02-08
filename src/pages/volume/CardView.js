@@ -15,6 +15,8 @@ function CardView(props) {
       volume: items.volume[i],
       Rupee: items.Rupee[i],
       Save: items.Save[i],
+      imageUrl1: items.imageUrl1,
+      imageUrl2: items.imageUrl2,
     });
   }
 
@@ -27,6 +29,8 @@ function CardView(props) {
           volume={card.volume}
           Rupee={card.Rupee}
           Save={card.Save}
+          ImageUrl1={card.imageUrl1}
+          ImageUrl2={card.imageUrl2}
         />
       ))}
     </div>

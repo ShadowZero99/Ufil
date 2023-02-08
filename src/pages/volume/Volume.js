@@ -59,6 +59,8 @@ const Volume = () => {
   }
 
   const maxsave = newcard.Rupee[newcard.Rupee.length - 1];
+  const imageUrl1 = newcard.imageUrl1;
+  const imageUrl2 = newcard.imageUrl2;
 
   return (
     <div className="Volume">
@@ -71,12 +73,12 @@ const Volume = () => {
         <div className="product-top-text">Select the volume required</div>
         <div className="volume-top">
           <div className="volume-top-left">
-            <img src={logo1} alt="" />
+            <img src={imageUrl1} alt="" />
             <p className="text1">Save up to</p>
             <p className="text2">Rs. {maxsave}</p>
           </div>
           <div className="volume-top-right">
-            <img src={bottle1} alt="" />
+            <img src={imageUrl2} alt="" />
           </div>
         </div>
 

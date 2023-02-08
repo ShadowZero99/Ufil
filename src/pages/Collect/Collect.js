@@ -3,8 +3,16 @@ import "./Collect.css";
 import print1 from "../../img/print1.png";
 import { Button } from "@mantine/core";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Collect = () => {
+  const location = useLocation();
+  const data3 = location.state;
+  console.log(data3);
+
+  const volume = data3.Volume;
+  const Rupee = data3.Rupee;
+
   return (
     <div className="Collect">
       <div className="collect-lang-background">
@@ -17,9 +25,9 @@ const Collect = () => {
         </div>
         <div className="collect-bottom">Total &emsp; &emsp; Quantity</div>
         <div className="collect-bottom-label">
-          Rs.5 &emsp; &emsp;&emsp;10 ml
+          Rs. {volume} &emsp; &emsp;&emsp;{Rupee} ml
         </div>
-        <Link style={{ textDecoration: "none" }} to="/Filling">
+        <Link style={{ textDecoration: "none" }} to="/Fill">
           <div className="btn-next">
             <Button>
               <span className="pp">Next</span>
