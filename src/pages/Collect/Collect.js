@@ -27,7 +27,7 @@ const Collect = () => {
         <div className="collect-bottom-label">
           Rs. {volume} &emsp; &emsp;&emsp;{Rupee} ml
         </div>
-        <Link style={{ textDecoration: "none" }} to="/Fill">
+        <Link style={{ textDecoration: "none" }} to="/Fill" state={data3}>
           <div className="btn-next">
             <Button>
               <span className="pp">Next</span>

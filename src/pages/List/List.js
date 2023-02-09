@@ -41,10 +41,6 @@ const List = () => {
     return itemp;
   });
 
-  // const handleClick = (id) => {
-  //   console.log(id);
-  // };
-  //    onClick={() => handleClick(props.itemid)}
   function Item(props) {
     return (
       <Link

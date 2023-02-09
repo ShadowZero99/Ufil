@@ -10,6 +10,7 @@ function Card(props) {
     Rupee: props.Rupee,
     ImageUrl1: props.ImageUrl1,
     ImageUrl2: props.ImageUrl2,
+    Productid: props.Productid,
   };
 
   return (

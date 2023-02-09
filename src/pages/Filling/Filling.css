@@ -47,6 +47,14 @@
   margin-top: 60px;
 }
 
+.blue-button {
+  background-color: #0072bc;
+}
+
+.red-button {
+  background-color: red;
+}
+
 @media screen and (max-width: 767px) and (min-width: 480px) {
   .Filling-top-text {
     display: flex;
@@ -94,6 +102,23 @@
     height: 70px;
     border-radius: 50px;
   }
+
+  .blue-button {
+    background-color: #0072bc;
+    font-size: 50px;
+    width: 180px;
+    height: 70px;
+    border-radius: 50px;
+  }
+
+  .red-button {
+    background-color: red;
+    font-size: 50px;
+    width: 180px;
+    height: 70px;
+    border-radius: 50px;
+  }
+
   .p5 {
     font-size: 32px;
   }
@@ -141,6 +166,21 @@
     margin-top: 250px;
   }
   .confirm-btn-confirm > button {
+    font-size: 50px;
+    width: 200px;
+    height: 110px;
+    border-radius: 70px;
+  }
+  .blue-button {
+    background-color: #0072bc;
+    font-size: 50px;
+    width: 200px;
+    height: 110px;
+    border-radius: 70px;
+  }
+
+  .red-button {
+    background-color: red;
     font-size: 50px;
     width: 200px;
     height: 110px;
@@ -198,6 +238,23 @@
     height: 160px;
     border-radius: 70px;
   }
+
+  .blue-button {
+    background-color: #0072bc;
+    font-size: 50px;
+    width: 280px;
+    height: 160px;
+    border-radius: 70px;
+  }
+
+  .red-button {
+    background-color: red;
+    font-size: 50px;
+    width: 280px;
+    height: 160px;
+    border-radius: 70px;
+  }
+
   .p5 {
     font-size: 65px;
   }
@@ -250,6 +307,23 @@
     height: 180px;
     border-radius: 90px;
   }
+
+  .blue-button {
+    background-color: #0072bc;
+    font-size: 50px;
+    width: 370px;
+    height: 180px;
+    border-radius: 90px;
+  }
+
+  .red-button {
+    background-color: red;
+    font-size: 50px;
+    width: 370px;
+    height: 180px;
+    border-radius: 90px;
+  }
+
   .p5 {
     font-size: 65px;
   }

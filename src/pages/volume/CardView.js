@@ -17,6 +17,7 @@ function CardView(props) {
       Save: items.Save[i],
       imageUrl1: items.imageUrl1,
       imageUrl2: items.imageUrl2,
+      productid: msgg,
     });
   }
 
@@ -31,6 +32,7 @@ function CardView(props) {
           Save={card.Save}
           ImageUrl1={card.imageUrl1}
           ImageUrl2={card.imageUrl2}
+          Productid={card.productid}
         />
       ))}
     </div>

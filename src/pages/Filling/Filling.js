@@ -1,10 +1,25 @@
 import "./Filling.css";
-import { Link } from "react-router-dom";
-//import print1 from "../../img/print1.png";
 import { Button } from "@mantine/core";
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Filling = () => {
+  const [isClicked, setIsClicked] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+      performAction();
+      navigate("/Thank");
+    }, 2000);
+  };
+
+  const performAction = () => {
+    console.log("Action performed!");
+  };
+
   return (
     <div className="Filling">
       <div className="Filling-lang-background">
@@ -14,13 +29,16 @@ const Filling = () => {
           <div className="Filling-middle-text2">ml</div>
         </div>
         <div className="Filling-bottom-text">
-          <Link style={{ textDecoration: "none" }} to="/Thank">
-            <div className="confirm-btn-confirm">
-              <Button>
-                <span className="p5">STOP</span>
-              </Button>
-            </div>
-          </Link>
+          {/* <Link style={{ textDecoration: "none" }} to="/Thank"> */}
+          <div className="confirm-btn-confirm">
+            <Button
+              className={isClicked ? "red-button" : "blue-button"}
+              onClick={handleClick}
+            >
+              <span className="p5">STOP</span>
+            </Button>
+          </div>
+          {/* </Link> */}
         </div>
       </div>
     </div>
