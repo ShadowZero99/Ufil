@@ -1,8 +1,6 @@
 import React from "react";
 import "./Confirm.css";
-//import Card from "../volume/Card";
 import { Link } from "react-router-dom";
-//import print1 from "../../img/print1.png";
 import { Button } from "@mantine/core";
 import { useLocation } from "react-router-dom";
 
@@ -10,7 +8,7 @@ const Confirm = () => {
   const location = useLocation();
   const data2 = location.state;
   console.log(data2);
-  //console.log(data2.volume);
+
   const volume = data2.Volume;
   const Rupee = data2.Rupee;
   const ImageUrl1 = data2.ImageUrl1;
@@ -35,7 +33,7 @@ const Confirm = () => {
           Best before 4 months from purchase date
         </div>
         <div className="confirm-btn-bottom">
-          <Link style={{ textDecoration: "none" }} to="/Volume">
+          <Link style={{ textDecoration: "none" }} to="/Product">
             <div className="confirm-btn-decline-o">
               <Button>
                 <span className="ppp">DECLINE</span>

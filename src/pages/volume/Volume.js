@@ -15,7 +15,7 @@ import logo3 from "../../img/Product_Images/logo3.png";
 import logo4 from "../../img/Product_Images/logo4.png";
 import logo5 from "../../img/Product_Images/logo5.png";
 import logo6 from "../../img/Product_Images/logo6.png";
-import Data from "../List/data.json";
+import Data from "../../File/data.json";
 import { useLocation } from "react-router-dom";
 
 const Volume = () => {

@@ -29,7 +29,6 @@ const Filling = () => {
           <div className="Filling-middle-text2">ml</div>
         </div>
         <div className="Filling-bottom-text">
-          {/* <Link style={{ textDecoration: "none" }} to="/Thank"> */}
           <div className="confirm-btn-confirm">
             <Button
               className={isClicked ? "red-button" : "blue-button"}
@@ -38,7 +37,6 @@ const Filling = () => {
               <span className="p5">STOP</span>
             </Button>
           </div>
-          {/* </Link> */}
         </div>
       </div>
     </div>

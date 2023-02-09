@@ -14,7 +14,7 @@ import logo6 from "../../img/Product_Images/logo6.png";
 import { Link } from "react-router-dom";
 import "./List.css";
 
-import Data from "../List/data.json";
+import Data from "../../File/data.json";
 
 const List = () => {
   const item = Data;
@@ -59,11 +59,7 @@ const List = () => {
 
   function ListView() {
     return (
-      <div
-        className="list-view"
-
-        //style={{ overflowY: "scroll", maxHeight: "70vh" }}
-      >
+      <div className="list-view">
         {Items.map((item) => (
           <Item
             key={item.id}

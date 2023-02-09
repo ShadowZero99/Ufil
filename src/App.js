@@ -21,7 +21,7 @@ function App() {
     const handleEvent = () => {
       clearTimeout(timerId);
       setIdle(false);
-      timerId = setTimeout(() => setIdle(true), 20000000);
+      timerId = setTimeout(() => setIdle(true), 10000);
     };
 
     window.addEventListener("mousemove", handleEvent);
